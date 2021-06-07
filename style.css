@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-image: url('s1.webp');
+    background-size: cover;
+    
+} */
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form{
+    margin-left: 150px;
+    border: 1px solid black;
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+
+form .icon{
+    align-self: center;
+    font-size: 1.5em;
+}
+
+form .submit{
+    align-self: center;
+
+
+}
+
+form .submit button{
+    padding: 7px;
+    
+    color: white;
+    background-color: black;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+form .input{
+    margin-left: 15px;
+    position: relative;
+}
+
+.input input{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding: 10px 2px 3px 2px;
+    border-bottom: 1px solid black;
+    width: 280px;
+}
+
+
+.input input:-webkit-autofill,
+.input input:-webkit-autofill:hover,
+.input input:-webkit-autofill:focus,
+.input input:-webkit-autofill:active {
+transition: background-color 5000s ease-in-out 0s;
+}
+
+.input label{
+    position: absolute;
+    top:0;
+    left: 0;
+    color: #808080;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.input input:focus ~ label{
+    top: -13px;
+    left: 0;
+    color: black;
+    font-weight: 600;
+}
+
+.input input:valid ~ label {
+    top: -13px;
+    left: 0;
+    color: black;
+    font-weight: 600;
+}
