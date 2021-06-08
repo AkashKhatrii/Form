@@ -12,22 +12,40 @@
 
 body{
     min-height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.form{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #181818;
+    clip-path: polygon(100% 0, 100% 40%, 0 68%, 0 0);
+    position: relative;
+    padding: 8% 20.3%;
+
+}
+
+.form h2{
+    color: white;
+    font-size: 2.5rem;
+
 }
 
 form{
+    position: absolute;
+    top: 27%;
+    left: 6%;
     margin-left: 150px;
-    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
     height: 450px;
     width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
-    
+    box-shadow: 2px 4px 3px 0px rgba(88, 88, 88, 0.425);
+    /* -2px -4px 3px 0px rgba(88, 88, 88, 0.425); */
 }
 
 form .icon{
@@ -95,4 +113,8 @@ transition: background-color 5000s ease-in-out 0s;
     left: 0;
     color: black;
     font-weight: 600;
+}
+
+.input input:focus, .input input:valid{
+    border-bottom: 2px solid black;
 }
